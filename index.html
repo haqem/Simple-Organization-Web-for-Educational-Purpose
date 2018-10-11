@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Speaking Content</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+	<div class="container">
+		<div class="brand">
+			<h1><img src="img/Petrels.jpg" alt="" class="logo"></h1>
+		</div>
+		<div class="topnav">
+  			<a class="active" href="index.html">Home</a>
+  			<a href="about-us.html">About</a>
+			<a href="location.html">Location</a>
+			<a href="gallery.html">Gallery</a>
+  			<a href="contact-us.html">Contact</a>
+  			<input type="text" placeholder="Search..">
+		</div>
+		<div class="content">
+			<div class="slideshow-container" align="center">
+				<div class="mySlides fade">
+ 					<div class="numbertext">1 / 3</div>
+ 					<img src="img/speaktest.jpg" style="width:100%">
+ 					<div class="text">Example of our Speaking Contest</div>				
+				</div>
+				<div class="mySlides fade">
+ 					<div class="numbertext">2 / 3</div>
+ 					<img src="img/speakup.jpg" style="width:100% height:50%">
+ 					<div class="text">Example of our Speaking Contest</div>				
+				</div>
+				<div class="mySlides fade">
+ 					<div class="numbertext">3 / 3</div>
+ 					<img src="img/cpsa.jpg" style="width:100%">
+ 					<div class="text">Example of our Speaking Contest</div>				
+				</div>
+			</div><br>
+			<div style="text-align:center">
+ 				<span class="dot"></span> 
+ 				<span class="dot"></span> 
+ 				<span class="dot"></span> 		
+			</div><p><h1 id="text2">Welcome to our Stormy Petrels Speaking Contest Websites !</h1>
+
+             <p id="text3">In our websites, users can navigate and search for the classes of Speaking criteria here ! We in Stormy Petrels team, also produces a lot of activities, like Pidato Contest, Teaching Games, Choral Speaking many more.</p>
+
+             <p id="text3">We guaranteed that users will loves our Speaking Campaign. We as Stormy Petrels Goal's is to succeed the users to expert in any of languages to fullfil the criteria for being a successfull intelligence and usefull person. For another information, please visit our Gallery, About, Contact, and Location.</p></p>
+		</div><br><br>
+	<div id="bigbox">
+    <div class="responsive">
+      <div class="gallery">
+          <img src="img/choral.jpg" alt="Choral Speaking" width="300" height="200">
+        <div class="desc">Choral Speaking</div>
+      </div>
+    </div>
+    <!-------------------->
+    <div class="responsive">
+      <div class="gallery">
+          <img src="img/debate.jpg" alt="Debate Contest" width="300" height="200">
+        <div class="desc">Debate Contest</div>
+      </div>
+    </div>
+    <!-------------------->
+    <div class="responsive">
+      <div class="gallery">
+          <img src="img/pidato.gif" alt="Pidato Contest" width="300" height="200">
+        <div class="desc">Pidato Contest</div>
+      </div>
+    </div>
+    <!-------------------->
+<div class="responsive">
+  		<div class="gallery">
+      			<img src="img/teaching.png" alt="Teaching Games" width="300" height="200">
+    	<div class="desc">Teaching Games</div><br><br><br>
+ 	</div>
+
+    <!-------------------->
+</div>
+
+</div>
+	<div id ="kotak3" style="margin-left: 1%"><!--kotak3 start-->
+          <h1>Our Story</h1>
+            <!--hr is horizontal-->
+            <hr style="border-top:dotted 1px; color:#999999; width:100%;">
+            
+            <img src="img/homeimage.jpg" style="width:100%; height:auto;">
+            <h3 id="text2">SPEAKING CORRECTLY</h3>
+            <p id="text2">
+            We need strong self confidence so that we can speak in public
+            </p>
+          </div><!--kotak3 end-->
+        
+        <div id ="kotak4"><!--kotak4 start-->
+          <h1>Quick Link</h1>
+          <hr style="border-top:dotted 1px; color:#999999; width:100%;">
+             <div id="kotak4A" style="width :49%; float:left;">
+              <img src="img/latest.jpg" style="width:100%; height:auto;auto;">
+                <h3 id="text2">Upcoming Events</h3>
+                <p id="text2">We have a new competation on 22 October 2018 in Kuala Lumpur Convention Centre. If you intrested visit this <a href="contact-us.html">link</a>
+                </p>
+             </div>
+             
+             <div id="kotak4B" style="width :49%; float:right;">
+              <img src="img/latest-update.png" style="width:100%; height:auto;auto;">
+                <h3 id="text2">News Update</h3>
+                <p id="text2">
+                We are reserving the best updates of Stormy Petrels here. Users can check our latest news like promotion and <a href="about-us.html">more</a>
+                </p>
+          </div>
+        </div><!--kotak4 end-->
+        
+        
+    </div><!--bekasbesar end-->
+	</div>
+<div class="footer"><p>Copyright Stormy Petrel. All Right Reserved</p></div>
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
